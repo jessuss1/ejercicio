@@ -32,8 +32,12 @@ class MainActivity : AppCompatActivity() {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val color = when (position) {
                     0 -> ContextCompat.getColor(this@MainActivity, R.color.red)
-                    1 -> ContextCompat.getColor(this@MainActivity, R.color.blue)
-                    2 -> ContextCompat.getColor(this@MainActivity, R.color.green)
+                    1 -> ContextCompat.getColor(this@MainActivity, R.color.green)
+                    2 -> ContextCompat.getColor(this@MainActivity, R.color.yellow)
+                    3 -> ContextCompat.getColor(this@MainActivity, R.color.orange)
+                    4 -> ContextCompat.getColor(this@MainActivity, R.color.blue)
+                    5 -> ContextCompat.getColor(this@MainActivity, R.color.violet)
+                    6 -> ContextCompat.getColor(this@MainActivity, R.color.white)
                     else -> ContextCompat.getColor(this@MainActivity, R.color.black)
                 }
 

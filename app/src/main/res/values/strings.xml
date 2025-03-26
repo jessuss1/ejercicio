@@ -3,7 +3,11 @@
 
     <string-array name="spinner">
         <item>Red</item>
-        <item>Blue</item>
         <item>Green</item>
+        <item>Yellow</item>
+        <item>Orange</item>
+        <item>Blue</item>
+        <item>Violet</item>
+        <item>White</item>
     </string-array>
 </resources>

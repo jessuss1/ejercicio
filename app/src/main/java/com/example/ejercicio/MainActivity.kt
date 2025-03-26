@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        binding.spinner?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 val color = when (position) {
                     0 -> ContextCompat.getColor(this@MainActivity, R.color.red)
@@ -41,16 +41,16 @@ class MainActivity : AppCompatActivity() {
                     else -> ContextCompat.getColor(this@MainActivity, R.color.black)
                 }
 
-                binding.button?.setBackgroundColor(color)
+                binding.button.setBackgroundColor(color)
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {}
         }
 
-        binding.seekBar?.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
+        binding.seekBar.setOnSeekBarChangeListener(object : SeekBar.OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
                 val alphaValue = progress / 100f
-                binding.button?.alpha = alphaValue
+                binding.button.alpha = alphaValue
             }
 
             override fun onStartTrackingTouch(seekBar: SeekBar?) {}

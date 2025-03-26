@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ejercicio</string>
+
+    <string-array name="spinner">
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+    </string-array>
+</resources>
